@@ -11,21 +11,35 @@
     <title>Hello World!: Data page</title>
   </head>
   <body>
-    <!--Navbar-->
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="data.html">Data</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-      </ul>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Luis Rubio</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="data.html" id="data_page" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Data</a>
+            <div class="dropdown-menu" aria-labelledby="data_page">
+              <a class="dropdown-item" href="nna.html">NNA Data</a>
+              <a class="dropdown-item" href="primed_to_react.html">Primed to (re)act Data</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sandbox.html">Sandbox</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <!--page content-->
     <div class="container-fluid">
     <h3>This page holds the data I produce.</h3>
