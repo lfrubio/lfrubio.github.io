@@ -1,90 +1,66 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>About</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <title>About</title>
+</head>
+<body onload="addNav()">
   <!--Navbar-->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Luis Rubio</a>
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <div id="nav-placeholder"></div>
+  <!--page content-->
+  <div class="row">
+    <div class="col-md mt-5 ms-4">
+      <div class="display-5 fw-bold">Hi! It's nice to meet you :)</div>
+      <p class="fs-4 mt-3">My name is Luis Rubio, and I'm currently a student at the University of Chicago. I'm studying Linguistics, the Arabic Language, and Data Science for the Humanities.</p>
+      <p class="fs-4">I've worked on many projects whose goals are very close to my heart. It's important to me to acquire knowledge, experiences, and skills that will allow me to make real, lasting, and compassionate change in communities that have raised me and brought me where I am today. For me, learning is an act of love, and I am always looking for ways in which I can solve someone's problem.</p>
+      <p class="fs-5">(P.S. Take a chance to checkout my JavaScript sandbox page ;) )</p>
+    </div>
+    
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide col-md mt-4 ms-4 me-4" data-bs-ride="carousel">
+      
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      </div>
+      
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/linguistics_ex.jpg" alt="Linguistics" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Arabic_call.jpeg" alt="Arabic" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Data_vis.jpeg" alt="Data" class="d-block w-100">
+        </div>
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="data.html" id="data_page" data-bs-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Data</a>
-            <div class="dropdown-menu" aria-labelledby="data_page">
-              <a class="dropdown-item" href="nna.html">NNA Data</a>
-              <a class="dropdown-item" href="primed_to_react.html">Primed to (re)act Data</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sandbox.html">Sandbox</a>
-          </li>
-        </ul>
-      </div>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-  </nav>
-    <!--page content-->
-    <div class="row">
-      <div class="col-md mt-5 ms-4">
-        <div class="display-5 fw-bold">Hi! It's nice to meet you :)</div>
-        <p class="fs-4 mt-3">My name is Luis Rubio, and I'm currently a student at the University of Chicago. I'm studying Linguistics, the Arabic Language, and Data Science for the Humanities.</p>
-        <p class="fs-4">I've worked on many projects whose goals are very close to my heart. It's important to me to acquire knowledge, experiences, and skills that will allow me to make real, lasting, and compassionate change in communities that have raised me and brought me where I am today. For me, learning is an act of love, and I am always looking for ways in which I can solve someone's problem.</p>
-        <p class="fs-5">(P.S. Take a chance to checkout my JavaScript sandbox page ;) )</p>
-      </div>
-
-      <!-- Carousel -->
-      <div id="demo" class="carousel slide col-md mt-4 ms-4 me-4" data-bs-ride="carousel">
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-        </div>
-
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/linguistics_ex.jpg" alt="Linguistics" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="images/Arabic_call.jpeg" alt="Arabic" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="images/Data_vis.jpeg" alt="Data" class="d-block w-100">
-          </div>
-        </div>
-
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  
+  <!-- Optional JavaScript; choose one of the two! -->
+  
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/add_nav.js"></script>
+</body>
 </html>
