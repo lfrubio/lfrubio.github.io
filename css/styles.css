@@ -1,3 +1,17 @@
-.alegreya-reg {
-    font-family: 'Alegreya', serif;
+.f_bitter {
+    font-family: 'Bitter', serif;
+}
+body {
+    font-family: 'Bitter', serif !important;
+}
+#index_img { 
+    padding: 0% !important;
+}
+#index_p::first-letter {
+    font-size: 3em;
+    line-height: 1;
+    padding-top: 1;
+    padding-right: 0.2em;
+    padding-left: 1;
+    float: left;
 }

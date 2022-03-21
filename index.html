@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/LFR_favicon.png">
-
+  
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Jquery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- CSS -->
@@ -16,25 +16,63 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
   <title>Luis Rubio</title>
 </head>
 <body>
   <!--Navbar-->
   <div id="nav-placeholder"></div>
   <!--page content-->
-
-  <img src="images/data_museum.jpg" alt="Museum" width="100%">
-  <div>
+  <div class="container-fluid" id="index_img" > 
+    <img src="images/data_museum.jpg" alt="Museum" width="100%">
+  </div>
+  <div class="container-fluid">
     <div class="display-1 text-center text-nowrap">Welcome.</div>
   </div>
-  <!-- Optional JavaScript; choose one of the two! -->
-
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-md mb-3">
+        <div class="card">
+          <img src="images/data_card.jpeg" class="card-img-top" alt="Placeholder">
+          <div class="card-body">
+            <p class="card-text" id="index_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at tortor at nisl pharetra porta sit amet placerat massa. Praesent at sollicitudin purus. Nunc id pharetra neque. Mauris sit amet dapibus diam, id egestas justo. Duis sit amet efficitur libero, vitae congue urna. Mauris in odio pharetra, auctor lorem quis, ullamcorper enim. Fusce cursus tincidunt bibendum. Vestibulum pellentesque libero sit amet libero commodo placerat. Nulla sit amet felis auctor, malesuada augue sit amet, euismod felis. Fusce non turpis venenatis, fermentum eros interdum, dictum mauris. Nunc hendrerit, arcu sit amet elementum blandit, elit eros viverra libero, vestibulum gravida arcu nisi eget eros. Duis eu arcu ante. Nullam eleifend nisl ex, in porttitor magna maximus in. Ut non turpis fringilla, efficitur est vel, hendrerit elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md mb-3">
+        <div class="card">
+          <img src="images/data_card.jpeg" class="card-img-top" alt="Placeholder">
+          <div class="card-body">
+            <p class="card-text" id="index_p">Integer ac finibus ligula, vitae ultricies quam. Pellentesque ac felis metus. Pellentesque pretium ex eget leo bibendum, non convallis lorem aliquet. Quisque malesuada nisl vel diam convallis vehicula. Nulla dignissim ac dui ac pharetra. Sed bibendum ac tortor eu dignissim. In tincidunt leo ut lorem ullamcorper pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md mb-3">
+        <div class="card">
+          <img src="images/data_card.jpeg" class="card-img-top" alt="Placeholder">
+          <div class="card-body">
+            <p class="card-text" id="index_p">Epito vitae feugiat magna. Vivamus massa lectus, pellentesque eu ipsum non, venenatis ullamcorper turpis. Quisque auctor facilisis placerat. Sed imperdiet fermentum feugiat. Nullam magna nisl, eleifend a tortor at, feugiat ullamcorper dui. Proin nisi lectus, sollicitudin nec lectus et, lacinia efficitur lorem. Sed condimentum ullamcorper est. Mauris accumsan varius cursus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md mb-3">
+        <div class="card">
+          <img src="images/data_card.jpeg" class="card-img-top" alt="Placeholder">
+          <div class="card-body">
+            <p class="card-text" id="index_p">Vestibulum vehicula nunc massa, ac pulvinar dui scelerisque at. Aenean purus mauris, lacinia non massa sit amet, blandit placerat velit. Suspendisse potenti. Etiam maximus libero quis velit tincidunt venenatis. Vestibulum viverra leo turpis, nec volutpat arcu fermentum ac. Nullam lectus purus, tincidunt id feugiat ac, imperdiet eget est. Suspendisse vitae diam a diam consectetur semper. Nullam tempus, purus at mattis mollis, risus felis euismod lacus, a finibus felis dolor eget velit. Duis euismod est eget pharetra tempor. Ut et varius lacus. Morbi lacinia odio ante, ut laoreet leo dignissim nec.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="d-none d-lg-block" id="ftr-placeholder"></div>
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <!-- Nav JS script -->
-  <script type="text/javascript" src="js/add_nav.js"></script>
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+  <!-- JS script -->
+  <script src="js/add_nav_ftr.js"></script>
 </body>
 </html>
