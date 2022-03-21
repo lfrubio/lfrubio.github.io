@@ -21,23 +21,72 @@
   <!--Navbar-->
   <div id="nav-placeholder"></div>
   <!--page content-->
-  <div class="container mt-3">
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="display-1 fw-bold">The Bilingual Environment:</div>
+    </div>
+    <div class="row mb-5">
+      <div class="display-5">Development and Resources</div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <h4>Exium Paratis Lirum</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend nisi sem. Proin vel tellus nec velit iaculis rhoncus sed at purus. Sed ut ullamcorper mauris. Nulla egestas dui nec congue ornare. Nulla viverra sapien at mi tincidunt imperdiet. Vivamus egestas, lorem eget accumsan aliquam, odio tellus bibendum odio, eget lacinia dolor magna in eros. Fusce auctor gravida felis ut cursus.</p>
+      </div>
+      <div class="col-md">
+            <img class="img-fluid" src="images/Blank_US_map_borders_labels.svg" alt="Map of the United States">          
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-md order-2 order-sm-1">
+            <img class="img-fluid" src="images/Blank_US_map_borders_labels.svg" alt="Map of the United States">          
+      </div>
+      <div class="col-md order-1 order-sm-2">
+        <h4>Consectetur, Adipisci Velit...</h4>
+        <p>Phasellus et nisl sit amet purus consequat laoreet. Duis auctor eleifend condimentum. Quisque vestibulum massa a scelerisque condimentum. Duis cursus, ex vitae cursus suscipit, magna sapien malesuada neque, et blandit lacus nunc a felis. Ut nec iaculis ligula, vitae dictum purus. Sed facilisis, nunc ac egestas sagittis, sapien lacus congue velit, quis lacinia urna odio nec eros. Sed vitae tortor eget augue facilisis scelerisque vestibulum vitae mi. Fusce justo velit, scelerisque at risus aliquet, efficitur ullamcorper magna.</p>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-md">
+        <h4>Neque Porro Quisquam</h4>
+        <p>Donec rutrum, nulla ut finibus congue, elit mauris pellentesque erat, non semper lectus felis facilisis magna. Praesent nibh quam, congue nec tempor in, scelerisque ut dui. Sed finibus ultrices aliquam. Integer porta suscipit dictum. Quisque dictum, velit sed dignissim dignissim, felis lectus tincidunt lorem, eget iaculis ante orci in lacus. In varius felis quis libero sollicitudin tempor. Donec magna nisl, venenatis pharetra tortor non, sagittis eleifend est. Donec vel mollis dui, ut euismod libero.</p>
+      </div>
+      <div class="col-md">
+        <img class="img-fluid" src="images/Blank_US_map_borders_labels.svg" alt="Map of the United States">          
+      </div>
+    </div>
+
+
+
     <div>
-      <h3>This page holds the data I produce.</h3>
+      <h3>How do the states stack up then?</h3>
     </div>
       <!-- User input field -->
       <form>
         <div class="row">
           <div class="col">
-            <input id="searchTerm" type="text" class="form-control" placeholder="Enter your search term here.">
+            <input id="searchTerm" type="text" class="form-control" placeholder="Search for a county...">
           </div>
         </div>
       </form>
       <!-- Button to submit search value -->
-      <button type="submit" class="btn btn-primary my-3">Search</button>
+      <button type="submit" class="btn btn-primary mt-3 mb-5" onclick="">Search</button>
       <!-- Output from JS function -->
-      <div class="container">
-      </div>
+      <div class="container mb-5">
+        <table class="table table-striped order-table" id="bilData">
+          <thead class="thead-dark" id="bilDataCols">
+            <tr>
+              <th style="text-align: left; width:30%">State</th>
+              <th style="text-align: left; width:30%">County</th>
+              <th style="text-align: left; width:30%">Data 1</th>
+              <th style="text-align: left; width:30%">Data 2</th>
+            </tr>
+          </thead>
+          <tbody id="bilDataBody">
+
+          </tbody>
+        </table>
+    </div>
   </div>
   <!-- Footer -->
   <div id="ftr-placeholder"></div>
